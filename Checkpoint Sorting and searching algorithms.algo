@@ -1,0 +1,27 @@
+//procedure//
+PROCEDURE InsertionSort(Var array1 : ARRAY_OF INTEGER[length];);
+VAR 
+//conteurs-declaration//
+   i=array1.length();
+   j=INTEGER;
+BEGIN
+//boocle for InsertionSort//
+      FOR i=1 to array1.length -1 do 
+        j=i
+        while j > 0 and array1[j-1] > array1[j] do
+           swap(array1[j], array1[j-1])
+              j = j - 1
+                end while
+      END_FOR
+END
+                          //algo//
+ALGORITHM array1
+VAR
+//declaration//
+   array1 : ARRAY_OF INTEGER[length];
+BEGIN
+   //make array1//
+  array1=[9,8,4,3,2,7,6,5,1,0];
+  //call procedure//
+  InsertionSort(array1)
+END
